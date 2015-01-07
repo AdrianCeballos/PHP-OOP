@@ -16,6 +16,11 @@ and open the template in the editor.
             public $price="2";
             public $color="green";
             public $miles="21";
+            
+            function mileprice(){
+                return "{$this->name}".
+                        "{$this->color}";
+            }
         }
         class House{
             public $street="Lake";
@@ -29,12 +34,14 @@ and open the template in the editor.
             public $price="12";
             public $ayy="lmao";
         }
+        
         $car1=new Car();
-        $car2=new Car();
+        $car1->color="Red";
+        $car1->name="Honda";
         $monkey1=new Monkey();
         $house1=new House();
         print $monkey1->fur;
-        print $car1->price;
+        print "My car is a {$car1->mileprice()}.";
         print $house1->street;
         ?>
     </body>
