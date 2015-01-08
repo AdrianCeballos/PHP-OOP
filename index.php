@@ -112,8 +112,25 @@ and open the template in the editor.
         }
         $wow = new Shibe("fluffy","white", "paws","claws");
         print " Doge be {$wow->wowmuch()}\n";
-
-        
+        // [LECTURE 3]
+        $such = array('testing','this','code');
+        if (is_array($such)){
+            echo "Wow such code";
+        }
+        else{
+            echo "Not array";
+        }
+        $schmoney = false;
+        if (is_bool($schmoney) === true){
+            echo "21";
+        }
+        else{
+            echo "no bool";
+        }
+        $null = NULL;
+        if (is_null($null) === true){
+            echo " Null";
+        }
         ?>
     </body>
 </html>
