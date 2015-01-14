@@ -72,7 +72,7 @@ and open the template in the editor.
                             "{$this->meme}";
                 }
         }
-        $aye = new Ayy("meme","dank", "keke","top");
+        $aye = new Ayy("meme","nice", "keke","top");
         print " Wow {$aye->ayylmao()}\n";
         class Kitty{
             public $fur;
